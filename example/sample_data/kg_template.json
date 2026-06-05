@@ -1,0 +1,35 @@
+{
+  "_comment": "Knowledge Graph Template for DKDF",
+  "_description": "This template matches the experiments.json format used in the paper",
+  
+  "experiments": [
+    {
+      "data": {
+        "name": "Your Experiment Name",
+        "purpose": "Brief description of the experiment purpose",
+        "theory": "Theoretical background and key formulas",
+        "equipment": [
+          {"name": "Equipment 1"},
+          {"name": "Equipment 2"}
+        ],
+        "steps": [
+          "Step 1: Description",
+          "Step 2: Description",
+          "Step 3: Description"
+        ]
+      },
+      "metadata": {
+        "pages": [1, 5],
+        "source": "Your source document"
+      }
+    }
+  ],
+  
+  "_example": {
+    "name": "Rotational Inertia Measurement",
+    "purpose": "Measure the moment of inertia using a rotational inertia apparatus",
+    "theory": "I = M/α, where M = mgr",
+    "equipment": [{"name": "Rotational inertia instrument"}, {"name": "Digital millisecond timer"}],
+    "steps": ["Level the apparatus", "Measure angular acceleration", "Calculate inertia"]
+  }
+}
