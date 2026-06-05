@@ -1,0 +1,45 @@
+{
+  "experiments": [
+    {
+      "data": {
+        "name": "Rotational Inertia Measurement",
+        "purpose": "Measure moment of inertia and verify rotational law",
+        "theory": "I = M/α, where M = mgr",
+        "equipment": [
+          {"name": "Rotational inertia instrument"},
+          {"name": "Digital millisecond timer"},
+          {"name": "Weights"}
+        ],
+        "steps": [
+          "Level the apparatus",
+          "Measure angular acceleration",
+          "Calculate moment of inertia"
+        ]
+      },
+      "metadata": {
+        "pages": [23, 28]
+      }
+    },
+    {
+      "data": {
+        "name": "Hall Effect Experiment",
+        "purpose": "Measure the relationship between Hall voltage and magnetic field",
+        "theory": "V_H = (R_H · I · B) / d",
+        "equipment": [
+          {"name": "Hall element"},
+          {"name": "Electromagnet"},
+          {"name": "DC power supply"}
+        ],
+        "steps": [
+          "Connect the circuit",
+          "Adjust magnetic field current",
+          "Measure Hall voltage"
+        ]
+      },
+      "metadata": {
+        "pages": [45, 52]
+      }
+    }
+  ],
+  "_note": "This is synthetic mock data for demonstration only. Replace with your actual knowledge graph."
+}
