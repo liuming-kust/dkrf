@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "source": "dkrf_physics_kg.json",
+    "converted_at": "2025-05-07 23:02:10",
+    "original_experiments": 3,
+    "conversion_version": "1.0",
+    "kg_id": "physics_kg_a1b2c3d4"
+  },
+  "statistics": {
+    "experiments": 3,
+    "instruments": 5,
+    "steps": 8,
+    "relations": 11,
+    "rules": 6
+  },
+  "entities": {
+    "exp_0000": {
+      "id": "exp_0000",
+      "name": "1.2 测量仪器精确度的测定",
+      "type": "concept",
+      "attributes": {
+        "purpose": "通过测量不同精度等级的仪器，验证其在特定条件下的最大允许偏差...",
+        "theory": "测量结果的精密度和正确度与测量仪器的精确度密切相关...",
+        "page": 6,
+        "source": "大学物理实验教程"
+      }
+    },
+    "inst_0000": {
+      "id": "inst_0000",
+      "name": "不同精度等级的测量仪器",
+      "type": "instrument",
+      "attributes": {
+        "quantity": 3,
+        "belongs_to": "1.2 测量仪器精确度的测定"
+      }
+    },
+    "step_0000": {
+      "id": "step_0000",
+      "name": "选择不同精度等级的测量仪器",
+      "type": "procedure",
+      "attributes": {
+        "order": 0,
+        "full_text": "选择不同精度等级的测量仪器",
+        "belongs_to": "1.2 测量仪器精确度的测定"
+      }
+    }
+  },
+  "relations": [
+    {
+      "id": "rel_0000",
+      "source_id": "exp_0000",
+      "source_name": "1.2 测量仪器精确度的测定",
+      "target_id": "inst_0000",
+      "target_name": "不同精度等级的测量仪器",
+      "type": "contains",
+      "confidence": 0.9,
+      "source": "extraction"
+    }
+  ],
+  "rules": [
+    {
+      "id": "rule_0000",
+      "horn_clause": "完成(选择不同精度等级的测量仪器) → 进行(在规定条件下进行多次测量，记录数据)",
+      "conditions": ["完成(选择不同精度等级的测量仪器)"],
+      "conclusion": "进行(在规定条件下进行多次测量，记录数据)",
+      "confidence": 0.8,
+      "concept": "1.2 测量仪器精确度的测定",
+      "source": "step_order"
+    }
+  ]
+}
